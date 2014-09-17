@@ -13,13 +13,15 @@ public class Player {
         playerNumber = playerNr;
     }
 
-    public void play() {
+    public String play() {
+        String s;
         if(rules.getCurrentNumber()%dividerToSkip==0){
-            System.out.println("Player " + playerNumber + ": Cowabunga");
+            s= "Player " + playerNumber + ": Cowabunga";
         }
         else {
-            System.out.println("Player " + playerNumber + ": " +rules.getCurrentNumber());
+            s= "Player " + playerNumber + ": " +rules.getCurrentNumber();
         }
         rules.increaseCurrentNumber();
+        return s;
     }
 }

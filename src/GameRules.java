@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -39,7 +38,7 @@ public class GameRules {
 
     public void startGame(){
         while(currentNumber<=playUntilThisNumber){
-            playerlist.get(currentPlayer++%playerlist.size()).play();
+            System.out.println(playerlist.get(currentPlayer++%playerlist.size()).play());
         }
     }
 }

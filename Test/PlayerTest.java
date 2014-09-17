@@ -9,6 +9,9 @@ public class PlayerTest {
     private GameRules gr;
     private Player player;
 
+    /*
+    Setup class for this test.
+     */
     @BeforeMethod
     public void setUp(){
         nrOfPLayers = 35;
@@ -17,7 +20,9 @@ public class PlayerTest {
         player = new Player(gr,100,divider);
     }
 
-
+    /*
+    Testing that the correct form of the string is returned.
+    */
     @Test
     public void testReturnString() {
         assert(player.play().equals("Player 100: 1"));

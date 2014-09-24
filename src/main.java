@@ -8,7 +8,7 @@ public class main {
     StarGame launches the players to play "Burr".
      */
     public static void main(String[] args){
-        GameRules gr = new GameRules(3,5);
+        GameRules gr = new GameRules(5,2);
         gr.startGame();
     }
 }

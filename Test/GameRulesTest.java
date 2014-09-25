@@ -1,3 +1,4 @@
+import MindRoad.GameRules;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

@@ -1,3 +1,5 @@
+package MindRoad;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +44,7 @@ public class GameRules {
     }
 
     /*
-    Fills a list of players after the parameters given from the main class.
+    Fills a list of players after the parameters given from the MindRoad.main class.
      */
     private void fillPlayerList(int numberOfPlayers){
         for(int i = 0 ; i < numberOfPlayers ; i++){

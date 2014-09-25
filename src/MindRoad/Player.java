@@ -1,3 +1,7 @@
+package MindRoad;
+
+import MindRoad.GameRules;
+
 /**
  * Created by robkr on 2014-09-15.
  */
@@ -26,10 +30,10 @@ public class Player {
     public String play() {
         String s;
         if(rules.getCurrentNumber()%dividerToSkip==0){
-            s= "Player " + playerNumber + ": Cowabunga";
+            s= "MindRoad.Player " + playerNumber + ": Cowabunga";
         }
         else {
-            s= "Player " + playerNumber + ": " +rules.getCurrentNumber();
+            s= "Playerpart " + playerNumber + ": " +rules.getCurrentNumber();
         }
         rules.increaseCurrentNumber();
         return s;

@@ -1,7 +1,7 @@
+import MindRoad.GameRules;
+import MindRoad.Player;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 public class PlayerTest {
     private int nrOfPLayers;
@@ -25,7 +25,7 @@ public class PlayerTest {
     */
     @Test
     public void testReturnString() {
-        assert(player.play().equals("Player 100: 1"));
+        assert(player.play().equals("MindRoad.Player 100: 1"));
     }
 
 }

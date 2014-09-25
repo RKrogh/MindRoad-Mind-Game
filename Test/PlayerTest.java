@@ -2,6 +2,7 @@ import MindRoad.GameRules;
 import MindRoad.Player;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import static org.testng.AssertJUnit.*;
 
 public class PlayerTest {
     private int nrOfPLayers;
@@ -25,7 +26,16 @@ public class PlayerTest {
     */
     @Test
     public void testReturnString() {
-        assert(player.play().equals("MindRoad.Player 100: 1"));
-    }
+        String res = player.play();
 
+        // Den har sortens assert kraver att man har med "-ea" som argument till JVM:en, annars misslyckas ALDRIG
+        // testerna. Nagon av oss ska komma ihag att ta med det i presentationen! :)
+        assert "Playerpart 100: 1".equals(res) : "Expected correct return string, got " + res;
+
+        // For att den har assertmetoden (och manga andra som assertNotNull, assertSame...) ska funka maste man
+        // gora import static org.testng.AssertJUnit.*; Den ar annars smidigare, eftersom den automatiskt skriver ut
+        // expected och actual. Och for att man slipper sitta och undra varfor testerna aldrig misslyckas nar man
+        // har glomt "-ea"...
+        assertEquals("Playerpart 100: 1", res);
+    }
 }

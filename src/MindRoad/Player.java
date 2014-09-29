@@ -30,10 +30,10 @@ public class Player {
     public String play() {
         String s;
         if(rules.getCurrentNumber()%dividerToSkip==0){
-            s = "MindRoad.Player " + playerNumber + ": Cowabunga";
+            s = "Player " + playerNumber + ": Cowabunga";
         }
         else {
-            s = "Playerpart " + playerNumber + ": " +rules.getCurrentNumber();
+            s = "Player " + playerNumber + ": " +rules.getCurrentNumber();
         }
         rules.increaseCurrentNumber();
         return s;

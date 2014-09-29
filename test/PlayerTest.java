@@ -30,12 +30,12 @@ public class PlayerTest {
 
         // Den har sortens assert kraver att man har med "-ea" som argument till JVM:en, annars misslyckas ALDRIG
         // testerna. Nagon av oss ska komma ihag att ta med det i presentationen! :)
-        assert "Playerpart 100: 1".equals(res) : "Expected correct return string, got " + res;
+        assert "Player 100: 1".equals(res) : "Expected correct return string, got " + res;
 
         // For att den har assertmetoden (och manga andra som assertNotNull, assertSame...) ska funka maste man
         // gora import static org.testng.AssertJUnit.*; Den ar annars smidigare, eftersom den automatiskt skriver ut
         // expected och actual. Och for att man slipper sitta och undra varfor testerna aldrig misslyckas nar man
         // har glomt "-ea"...
-        assertEquals("Playerpart 100: 1", res);
+        assertEquals("Player 100: 1", res);
     }
 }

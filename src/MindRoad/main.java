@@ -1,6 +1,5 @@
 package MindRoad;
 
-import MindRoad.GameRules;
 
 /**
  * Created by robkr on 2014-09-15.
@@ -12,11 +11,7 @@ public class main {
     StarGame launches the players to play "Burr".
      */
     public static void main(String[] args){
-        start();
-    }
-
-    public static void start() {
-        GameRules gr = new GameRules(3,5);
-        gr.startGame();
+        StartGame game = new StartGame();
+        game.start();
     }
 }

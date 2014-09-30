@@ -5,6 +5,7 @@
     <classes>
       <class name="PlayerTest" />
       <class name="GameRulesTest" />
+      <class name="PerformanceTest" />
     </classes>
  </test>
 </suite>

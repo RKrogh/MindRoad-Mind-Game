@@ -1,14 +1,15 @@
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
+import static org.testng.AssertJUnit.*;
 
 public class PerformanceTest {
-    ThreadMXBean tmxb;
+    private ThreadMXBean tmxb;
 
     @BeforeMethod
     public void setUp(){
+        ManagementFactory.getClassLoadingMXBean();
         tmxb = ManagementFactory.getThreadMXBean();
     }
 

@@ -2,7 +2,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
-import MindRoad.main;
 import static org.testng.AssertJUnit.*;
 
 public class PerformanceTest {

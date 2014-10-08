@@ -4,8 +4,8 @@ COBERTURA=cobertura-2.0.3
 INSTRUMENTED=instrumented
 REPORTDIR=cobertura_report
 
-mkdir -f $INSTRUMENTED
-mkdir -f $REPORTDIR
+mkdir -p $INSTRUMENTED
+mkdir -p $REPORTDIR
 
 # Instrument the classes that we want to check coverage on
 $COBERTURA/cobertura-instrument.sh src/MindRoad/*.class --destination $INSTRUMENTED || exit

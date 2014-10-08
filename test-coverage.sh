@@ -14,7 +14,7 @@ $COBERTURA/cobertura-instrument.sh src/MindRoad/*.class --destination $INSTRUMEN
 java -cp $COBERTURA/$COBERTURA.jar:$INSTRUMENTED:testng-6.8/testng-6.8.jar:test org.testng.TestNG -verbose 2 test/test.xml
 
 # Generate report
-$COBERTURA/cobertura-report.sh --destination $REPORTDIR src
+$COBERTURA/cobertura-report.sh --format xml --destination $REPORTDIR src
 
 # Check coverage
 $COBERTURA/cobertura-check.sh

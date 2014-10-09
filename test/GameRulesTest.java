@@ -1,6 +1,7 @@
 import MindRoad.GameRules;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import static org.testng.AssertJUnit.*;
 
 public class GameRulesTest {
     private int nrOfPLayers;
@@ -32,6 +33,6 @@ public class GameRulesTest {
     public void testIncreaseCurrentNumber() {
         int cn = gr.getCurrentNumber();
         gr.increaseCurrentNumber();
-        assert(gr.getCurrentNumber()==cn+7);
+        assertEquals(gr.getCurrentNumber(),cn+5);
     }
 }

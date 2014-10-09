@@ -20,7 +20,7 @@ public class GameRulesTest {
     /*
     The current number must be a positive one to make the game work.
      */
-    /*@Test
+    @Test
     public void testCurrentNumber(){
         assert (gr.getCurrentNumber()>0);
     }

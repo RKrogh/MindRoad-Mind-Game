@@ -22,7 +22,7 @@ public class GameRulesTest {
      */
     @Test
     public void testCurrentNumber(){
-        assert (gr.getCurrentNumber()>0);
+        assert (gr.getCurrentNumber()<0);
     }
 
     /*

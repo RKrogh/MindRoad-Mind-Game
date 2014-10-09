@@ -22,7 +22,7 @@ public class GameRulesTest {
      */
     @Test
     public void testCurrentNumber(){
-        assert (gr.getCurrentNumber()<0);
+        assert (gr.getCurrentNumber()>0);
     }
 
     /*
@@ -32,6 +32,6 @@ public class GameRulesTest {
     public void testIncreaseCurrentNumber() {
         int cn = gr.getCurrentNumber();
         gr.increaseCurrentNumber();
-        assert(gr.getCurrentNumber()==cn+1);
+        assert(gr.getCurrentNumber()==cn+7);
     }
 }

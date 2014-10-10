@@ -33,6 +33,6 @@ public class GameRulesTest {
     public void testIncreaseCurrentNumber() {
         int cn = gr.getCurrentNumber();
         gr.increaseCurrentNumber();
-        assertEquals(gr.getCurrentNumber(),cn+5);
+        assertEquals(gr.getCurrentNumber(),cn+1);
     }
 }

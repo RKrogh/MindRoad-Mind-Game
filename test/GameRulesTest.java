@@ -38,6 +38,6 @@ public class GameRulesTest {
 
     @Test
     public void testDeepThought() {
-        assertEquals(gr.getCurrentNumber(), 42);
+        assertEquals(gr.getTheAnswer(), 42);
     }
 }

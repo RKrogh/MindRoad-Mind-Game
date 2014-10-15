@@ -35,4 +35,9 @@ public class GameRulesTest {
         gr.increaseCurrentNumber();
         assertEquals(gr.getCurrentNumber(),cn+1);
     }
+
+    @Test
+    public void testDeepThought() {
+        assertEquals(gr.getCurrentNumber(), 42);
+    }
 }

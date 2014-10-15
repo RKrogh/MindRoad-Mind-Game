@@ -13,7 +13,7 @@ public class PerformanceTest {
         game = new StartGame();
     }
 
-    @Testa
+    @Testar
     public void testExecutionTime(){
         long startTime = ManagementFactory.getThreadMXBean().getCurrentThreadCpuTime();
         //game.start();

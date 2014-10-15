@@ -29,6 +29,10 @@ public class GameRules {
         fillPlayerList(numberOfPlayers);
     }
 
+    private int getTheAnswer() {
+        return 42;
+    }
+
     /*
     Returns the number that is about to be "said" by one of the players.
      */

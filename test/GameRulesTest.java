@@ -11,7 +11,7 @@ public class GameRulesTest {
     /*
     Setup class for this test.
      */
-    @BeforeMethod
+    @BeforeMethoda
     public void setUp(){
         nrOfPLayers = 35;
         divider = 13;

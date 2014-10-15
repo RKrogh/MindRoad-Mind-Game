@@ -16,7 +16,7 @@ public class PerformanceTest {
     @Test
     public void testExecutionTime(){
         long startTime = ManagementFactory.getThreadMXBean().getCurrentThreadCpuTime();
-        game.start();
+        //game.start();
         long finnishTime = ManagementFactory.getThreadMXBean().getCurrentThreadCpuTime();
         System.out.println(startTime);
         System.out.println(finnishTime);

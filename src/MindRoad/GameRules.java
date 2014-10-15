@@ -29,7 +29,7 @@ public class GameRules {
         fillPlayerList(numberOfPlayers);
     }
 
-    private int getTheAnswer() {
+    public int getTheAnswer() {
         return 42;
     }
 

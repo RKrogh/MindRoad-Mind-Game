@@ -13,13 +13,13 @@ public class PlayerTest {
     /*
     Setup class for this test.
      */
-    @BeforeMethod
+    /*@BeforeMethod
     public void setUp(){
         nrOfPLayers = 35;
         divider = 13;
         gr = new GameRules(nrOfPLayers,divider);
         player = new Player(gr,100,divider);
-    }
+    }*/
 
     /*
     Testing that the correct form of the string is returned.

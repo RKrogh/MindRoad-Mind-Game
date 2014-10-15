@@ -11,30 +11,30 @@ public class GameRulesTest {
     /*
     Setup class for this test.
      */
-    @BeforeMethod
+    /*@BeforeMethod
     public void setUp(){
         nrOfPLayers = 35;
         divider = 13;
         gr = new GameRules(nrOfPLayers,divider);
-    }
+    }*/
 
     /*
     The current number must be a positive one to make the game work.
      */
-    @Test
+    /*@Test
     public void testCurrentNumber(){
         assert (gr.getCurrentNumber()>0);
-    }
+    }*/
 
     /*
     The increaseNumber method is used to
      */
-    @Test
+    /*@Test
     public void testIncreaseCurrentNumber() {
         int cn = gr.getCurrentNumber();
         gr.increaseCurrentNumber();
         assertEquals(gr.getCurrentNumber(),cn+1);
-    }
+    }*/
 
     /*@Test
     public void testDeepThought() {

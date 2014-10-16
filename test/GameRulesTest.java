@@ -29,10 +29,10 @@ public class GameRulesTest {
     /*
     The increaseNumber method is used to
      */
-    /*@Test
+    @Test
     public void testIncreaseCurrentNumber() {
         int cn = gr.getCurrentNumber();
         gr.increaseCurrentNumber();
         assertEquals(gr.getCurrentNumber(),cn+1);
-    }*/
+    }
 }
